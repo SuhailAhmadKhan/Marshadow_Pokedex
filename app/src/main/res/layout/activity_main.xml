@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/marshadowImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:fadingEdge="horizontal|vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/Pokemon_name"
+        android:textColor="#E6E2F3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/Pokemon_Image"
+        android:cropToPadding="false"
+        android:paddingTop="10dp"
+        android:src="@drawable/marshadow"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="4dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="@string/pok_dex_entry"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/quot_it_sinks_into_the_shadows_of_people_and_pok_mon_where_it_can_understand_their_feelings_and_copy_their_capabilities_quot"
+        android:textColor="#BA68C8"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/type"
+        android:textColor="#B388FF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView6"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FF5722"
+        android:gravity="center"
+        android:text="@string/fighting"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView6"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/textView7"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#673AB7"
+        android:gravity="center"
+        android:text="@string/ghost"
+        android:textStyle="bold|italic"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView8"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/do_you_like_this_pok_mon"
+        android:textColor="#B388FF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView9"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundstyle"
+        android:foregroundTint="#000000"
+        android:text="@string/yes" />
+
+    <Button
+        android:id="@+id/buttonno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView9"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/button"
+        android:background="@drawable/roundstyle"
+        android:foregroundTint="#000000"
+        android:text="@string/no" />
+
+    <ImageButton
+        android:id="@+id/cryMarshadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView"
+        android:contentDescription="@string/todo"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+</RelativeLayout>

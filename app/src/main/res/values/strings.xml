@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Marshadow Pokedex</string>
+    <string name="Pokemon_Image">Marshadows Image</string>
+    <string name="Pokemon_name"><u>#802 Marshadow</u></string>
+    <string name="pok_dex_entry">Pokédex Entry</string>
+    <string name="quot_it_sinks_into_the_shadows_of_people_and_pok_mon_where_it_can_understand_their_feelings_and_copy_their_capabilities_quot">\"It sinks into the shadows of people and Pokémon, where it can understand their feelings and copy their capabilities.\"</string>
+    <string name="type">Type:</string>
+    <string name="fighting">Fighting</string>
+    <string name="do_you_like_this_pok_mon">Do you like this Pokémon?</string>
+    <string name="ghost">Ghost</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="todo">TODO</string>
+</resources>
